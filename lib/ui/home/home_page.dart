@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 /// @ClassName:      homePage
 /// @Author:         hanxu.zhao
 /// @CreateDate:     2020/6/29 1:57 PM
-/// @Description:
+/// @Description:    首页
 
 class HomePage extends StatefulWidget {
   @override
@@ -17,6 +17,11 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Center(
+        child: Text(
+          "记账"
+        ),
+      ),
     );
   }
 }

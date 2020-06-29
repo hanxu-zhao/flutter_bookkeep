@@ -24,6 +24,19 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # 国际化
+  flutter_localizations:
+    sdk: flutter
+  # intl包
+  intl: ^0.16.1
+  # State Manager 状态管理
+  provider: ^4.0.4
+  # Route Manager 路由管理
+  fluro: ^1.6.1
+  # Data Storage key-value存储
+  shared_preferences: ^0.5.6+3
+  # LocalStorage json存储
+  localstorage: ^3.0.1+4
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -32,6 +45,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  # intl包
+  intl_translation: ^0.17.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -74,3 +90,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_intl:
+  enabled: true
