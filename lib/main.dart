@@ -16,6 +16,7 @@ import 'utils/log_utils.dart';
 
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await StorageManager.init();
 
   runApp(MyApp(
