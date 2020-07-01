@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutterbookkeep/common/provider/locale_provider.dart';
+import 'package:flutterbookkeep/ui/account/login/login_page.dart';
 import 'package:flutterbookkeep/ui/home/home_page.dart';
 
 import 'common/manager/storage_manager.dart';
@@ -20,7 +21,7 @@ void main() async {
   await StorageManager.init();
 
   runApp(MyApp(
-    home: HomePage(),
+    home: LoginPage(),
   ));
   if (Platform.isAndroid) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     var localeProvider = LocaleProvider();
     return MaterialApp(
-      title: "Kinto",
+      title: "jizhang",
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
