@@ -14,6 +14,7 @@ import 'generated/l10n.dart';
 import 'ui/routes/AppRouter.dart';
 import 'ui/routes/routes.dart';
 import 'utils/log_utils.dart';
+import 'utils/size_utils.dart';
 
 
 void main() async {
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var localeProvider = LocaleProvider();
+    SizeAdapt.init(width: 750, allowFontScaling: false);
     return MaterialApp(
       title: "jizhang",
       theme: ThemeData(

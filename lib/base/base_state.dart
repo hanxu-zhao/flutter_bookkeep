@@ -113,4 +113,19 @@ abstract class BaseState<V extends StatefulWidget, VM extends BaseViewModel>
       child: child,
     );
   }
+
+  @override
+  void closeLoading() {
+    // TODO: implement closeLoading
+  }
+
+  @override
+  void showErrorDialog(String content) {
+    // TODO: implement showErrorDialog
+  }
+
+  @override
+  void showLoading({bool barrierDismissible = true, bool useRootNavigator = true, RouteSettings routeSettings}) {
+    // TODO: implement showLoading
+  }
 }

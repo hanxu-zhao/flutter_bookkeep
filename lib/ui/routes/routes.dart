@@ -1,5 +1,6 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterbookkeep/ui/navigation/navigation_router.dart';
 
 import 'not_found_page.dart';
 import 'router_provider.dart';
@@ -25,6 +26,7 @@ class Routes {
 
 
     _listRouter.clear();
+    _listRouter.add(NavigationRouter());
 
     /// 各自路由由各自模块管理，统一在此添加初始化
 //    _listRouter.add(AccountRouter());
